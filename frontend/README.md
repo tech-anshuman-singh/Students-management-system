@@ -1,16 +1,59 @@
-# React + Vite
+# Student Management Frontend
+# Student Management Frontend
+The frontend is a React application built with Vite. It provides a student directory for adding, searching, and deleting student records through the backend API.
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Requirements
 
-Currently, two official plugins are available:
+- Node.js and npm
+- The backend API running at `http://localhost:5000`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Run Locally
 
-## React Compiler
+From this directory, install dependencies and start the development server:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```sh
+npm install
+npm run dev
+```
 
-## Expanding the Oxlint configuration
+Open the URL printed by Vite, usually [http://localhost:5173](http://localhost:5173).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Available Scripts
+
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the Vite development server |
+| `npm run build` | Build the production frontend in `dist/` |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint` | Run Oxlint |
+
+The frontend sends requests to `http://localhost:5000/students`. Start and configure the backend using the project-level [README](../README.md).
+
+The frontend is a React application built with Vite. It provides a student directory for adding, searching, and deleting student records through the backend API.
+
+## Requirements
+
+- Node.js and npm
+- The backend API running at `http://localhost:5000`
+
+## Run Locally
+
+From this directory, install dependencies and start the development server:
+
+```sh
+npm install
+npm run dev
+```
+
+Open the URL printed by Vite, usually [http://localhost:5173](http://localhost:5173).
+
+## Available Scripts
+
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the Vite development server |
+| `npm run build` | Build the production frontend in `dist/` |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint` | Run Oxlint |
+
+The frontend sends requests to `http://localhost:5000/students`. Start and configure the backend using the project-level [README](../README.md).

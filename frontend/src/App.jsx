@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 
 function App() {
-  const API = "http://localhost:5000/students";
+  const API = "https://students-management-system-pi.vercel.app/students";
 
   const [students, setStudents] = useState([]);
   const [name, setName] = useState("");
