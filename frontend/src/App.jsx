@@ -3,7 +3,9 @@ import { useEffect, useState } from "react";
 import "./App.css";
 
 function App() {
-  const API = "https://students-management-system-pi.vercel.app/students";
+  const API_BASE_URL =
+    import.meta.env.VITE_API_URL || "http://localhost:5000";
+  const API = `${API_BASE_URL.replace(/\/$/, "")}/students`;
 
   const [students, setStudents] = useState([]);
   const [name, setName] = useState("");
